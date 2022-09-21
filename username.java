@@ -1,20 +1,40 @@
-import java.util.*;
- class username
- {
-    public static void main(String[] Args){
-        Scanner sc = new Scanner(System.in);
 
-        String inp;
-        System.out.println("Enter a UserName : ");
-        inp = sc.nextLine();
+ import java.util.Scanner;
 
-        System.out.println("Enter username again : ");
-        String x = sc.nextLine();
+   class Username {
 
-        if(inp.equals(x)){
-            System.out.println("The UserName is Valid.");
+        public static void main(String args[])
+
+        {
+
+            String username, password;
+
+            Scanner s = new Scanner(System.in);
+
+            System.out.print("Enter username:");
+
+            username = s.nextLine();
+
+            System.out.print("Enter password:");
+
+            password = s.nextLine();
+
+            if(username.equals("saveetha@789") && password.equals("saveetha@789"))
+
+            {
+
+                System.out.println("username is valid");
+
+            }
+
+            else
+
+            {
+
+                System.out.println("username is invalid");
+
+            }
+
         }
-        else{
-            System.out.println("Enter a Valid Username.");
-        }
+
     }
