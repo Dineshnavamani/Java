@@ -1,5 +1,5 @@
 import java.util.Scanner;
- class composite 
+public class compositearray
 {
  public static void main(String[] args)
  {
@@ -9,18 +9,16 @@ import java.util.Scanner;
  float[] arr;
  int size;
  Scanner s = new Scanner(System.in);
- System.out.print("Enter the array of element: ");
+ System.out.print("Enter the no. of element: ");
  size = s.nextInt();
  arr = new float[size];
- System.out.println("Enter the  elements: ");
+ System.out.println("Enter the elements: ");
  for (int i = 0; i < size; i++)
  arr[i] = s.nextFloat();
- for (int j = 0; j < size; j++) 
-{
+ for (int j = 0; j < size; j++) {
  int count = 0;
  if (arr[j] > 0) {
- for (int k = 1; k <= arr[j]; k++) 
-{
+ for (int k = 1; k <= arr[j]; k++) {
  if (arr[j] % k == 0)
  count++;
  }
@@ -29,24 +27,21 @@ import java.util.Scanner;
  else
  p_count++;
  }
- else if(arr[j]<0) 
-{
- for (float k =arr[j]; k<=-1; k++) 
-{
+ else if(arr[j]<0) {
+ for (float k =arr[j]; k<=-1; k++) {
  if (arr[j] % k == 0)
  count++;
  }
- if (count > 2)
-{
+ if (count > 2){
  c_count++;
  }
- else
-{
+ else{
  p_count++;
  }
  }
  }
  System.out.println("No. of composite num: " + c_count);
+ System.out.println("No. of Prime num: " + p_count);
  s.close();
  }
  catch(Exception e)
